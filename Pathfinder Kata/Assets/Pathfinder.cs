@@ -7,8 +7,8 @@ public class Pathfinder : MonoBehaviour
 	void Update()
 	{
 		var path = GetPath(Map);
-		if (Time.time < path!.Count)
-			transform.position = path[(int)Time.time];
+		if (Time.time / 2 < path!.Count)
+			transform.position = path[(int)(Time.time / 2)];
 	}
 
 	public const string Map = @"
